@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000; /* SOLID BLACK BG */
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s;
+}
+
+#navbar.scrolled {
+  background-color: #290000;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4444;
+  text-shadow: 0 0 8px #ff2222;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #800000;
+  color: #ff4c4c;
+  box-shadow: 0 0 10px #ff4c4c;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000; /* BLACK */
+}
+
+.section h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ff4c4c;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.section p {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Contact Section */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: white;
+  resize: none;
+}
+
+.contact-section button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #990000;
+  box-shadow: 0 0 10px #ff4c4c;
+}
